@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "mvpulse-three.vercel.app" }],
+      "destination": "https://mvpulse-coaching.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
+}
