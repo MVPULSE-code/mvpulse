@@ -2,6 +2,13 @@
 <html lang="fr" class="no-js">
 <head>
   <meta charset="utf-8">
+  <script>
+    // Ancienne adresse : renvoie vers l'adresse officielle du site.
+    if (location.hostname === 'mvpulse-three.vercel.app') {
+      location.replace('https://mvpulse-coaching.vercel.app' + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <link rel="canonical" href="https://mvpulse-coaching.vercel.app/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MVPulse Coaching — Coaching sportif personnalisé</title>
   <meta name="description" content="MVPulse : coaching sportif personnalisé en présentiel et en ligne. Perte de poids, prise de muscle, remise en forme et performance. Réserve ta séance découverte.">
