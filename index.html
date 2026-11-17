@@ -47,7 +47,7 @@
         <a href="#methode">Méthode</a>
         <a href="#programmes">Programmes</a>
         <a href="#equipe">L'équipe</a>
-        <a href="#offres">Offres</a>
+        <a href="#offres">Tarifs</a>
         <a href="#process">Comment ça marche</a>
         <a href="#avis">Avis</a>
         <a href="#faq">FAQ</a>
@@ -191,7 +191,7 @@
 
             <div class="programmes__cta reveal">
               <a href="#contact" class="btn">Je veux mon programme</a>
-              <a href="#offres" class="btn btn--ghost">Voir les formules</a>
+              <a href="#offre-distance" class="btn btn--ghost">Voir les tarifs</a>
             </div>
           </div>
 
@@ -217,7 +217,7 @@
               <div class="plan__progress-label"><span>Progression du cycle</span><span>3 / 8 semaines</span></div>
               <div class="plan__bar"><span style="width: 37.5%"></span></div>
             </div>
-            <p class="plan__note">Vidéos des exercices · Repères nutrition · Bilan chaque semaine</p>
+            <p class="plan__note">Programme sur-mesure · Suivi individualisé · Bilan régulier</p>
           </div>
         </div>
       </div>
@@ -266,59 +266,200 @@
       </div>
     </section>
 
-    <!-- ===== OFFRES ===== -->
+    <!-- ===== OFFRES & TARIFS ===== -->
+    <!-- Prestations et prix repris de la plaquette « Nos prestations & tarifs ». -->
     <section class="section" id="offres">
       <div class="container">
         <div class="section__head">
-          <p class="eyebrow reveal">Offres</p>
-          <h2 class="section__title reveal">Choisis ta <span class="accent">formule</span></h2>
-          <p class="section__sub reveal">Toutes les formules commencent par une séance découverte gratuite pour faire le point sur tes objectifs.</p>
+          <p class="eyebrow reveal">Prestations &amp; tarifs</p>
+          <h2 class="section__title reveal">Ton objectif. <span class="accent">Notre mission.</span></h2>
+          <p class="section__sub reveal">À domicile, en extérieur, à distance ou en groupe : 5 formules pour avancer à ton rythme. Choisis celle qui te correspond.</p>
         </div>
 
-        <div class="cards">
-          <article class="card reveal">
-            <h3 class="card__title">Coaching en ligne</h3>
-            <p class="card__desc">Ton programme dans la poche, où que tu sois.</p>
-            <p class="card__price"><span>À partir de</span> 79€<small>/mois</small></p>
-            <ul class="card__list">
-              <li>Programme personnalisé mis à jour chaque mois</li>
-              <li>Vidéos de démonstration des exercices</li>
-              <li>Conseils nutrition adaptés</li>
-              <li>Bilan hebdomadaire</li>
-              <li>Échanges par message</li>
-            </ul>
-            <a href="#contact" class="btn btn--ghost btn--block">Je choisis cette formule</a>
-          </article>
+        <nav class="offers-nav reveal" aria-label="Nos formules">
+          <a href="#offre-domicile" class="offers-nav__item"><span class="offers-nav__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span><span class="offers-nav__text"><small>01</small>À domicile</span><span class="offers-nav__price">dès 55 €</span></a>
+          <a href="#offre-collectif" class="offers-nav__item"><span class="offers-nav__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><circle cx="5" cy="10" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M7 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M2 19c0-2.2 1.3-3.6 3-3.9M22 19c0-2.2-1.3-3.6-3-3.9"/></svg></span><span class="offers-nav__text"><small>02</small>En groupe &amp; entreprises</span><span class="offers-nav__price">dès 10 €</span></a>
+          <a href="#offre-distance" class="offers-nav__item"><span class="offers-nav__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><circle cx="12" cy="9" r="2"/><path d="M8.5 14c.6-1.4 2-2.2 3.5-2.2s2.9.8 3.5 2.2"/></svg></span><span class="offers-nav__text"><small>03</small>Programmes &amp; à distance</span><span class="offers-nav__price">dès 50 €</span></a>
+          <a href="#offre-essentiel" class="offers-nav__item"><span class="offers-nav__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M8.5 11.5l1.2 1.2 2-2M8.5 16.5l1.2 1.2 2-2M14 12h2M14 17h2"/></svg></span><span class="offers-nav__text"><small>04</small>MVPulse Essentiel</span><span class="offers-nav__price">240 €/mois</span></a>
+          <a href="#offre-premium" class="offers-nav__item"><span class="offers-nav__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20v-5M11 20v-8M16 20v-11"/><path d="M4 11l6-5 4 3 6-5"/><path d="M16 4h4v4"/></svg></span><span class="offers-nav__text"><small>05</small>Premium</span><span class="offers-nav__price">dès 290 €/mois</span></a>
+        </nav>
 
-          <article class="card card--featured reveal">
-            <span class="card__tag">Le plus populaire</span>
-            <h3 class="card__title">Coaching individuel</h3>
-            <p class="card__desc">Le suivi le plus complet, en face à face.</p>
-            <p class="card__price"><span>À partir de</span> 50€<small>/séance</small></p>
-            <ul class="card__list">
-              <li>Séances en salle, à domicile ou en extérieur</li>
-              <li>Correction technique en direct</li>
-              <li>Programme entre les séances</li>
-              <li>Plan nutrition personnalisé</li>
-              <li>Suivi des mesures & progrès</li>
+        <div class="offers">
+          <article class="offer reveal" id="offre-domicile">
+            <header class="offer__head">
+              <span class="offer__num">01</span>
+              <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+              <div>
+                <h3 class="offer__title">Coaching individualisé à domicile</h3>
+                <p class="offer__tagline">Un suivi 100 % personnalisé, directement chez toi.</p>
+              </div>
+            </header>
+            <ul class="price-list">
+              <li class="price-row">
+                <div class="price-row__label"><strong>Séance à l'unité</strong><small>Tarif à l'heure</small></div>
+                <div class="price-row__price">80 €</div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Pack 4 séances</strong><small>Soit 65 € la séance · <em>60 € économisés</em></small></div>
+                <div class="price-row__price">260 €</div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Pack 8 séances</strong><small>Soit 60 € la séance · <em>160 € économisés</em></small></div>
+                <div class="price-row__price">480 €</div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Pack 12 séances</strong><small>Soit 55 € la séance · <em>300 € économisés</em></small></div>
+                <div class="price-row__price">660 €</div>
+              </li>
             </ul>
-            <a href="#contact" class="btn btn--block">Je choisis cette formule</a>
-          </article>
 
-          <article class="card reveal">
-            <h3 class="card__title">Small group</h3>
-            <p class="card__desc">L'énergie du groupe, l'attention du coach.</p>
-            <p class="card__price"><span>À partir de</span> 25€<small>/séance</small></p>
-            <ul class="card__list">
-              <li>Groupes de 2 à 6 personnes</li>
-              <li>Entre amis, en couple ou entre collègues</li>
-              <li>Séances dynamiques & variées</li>
-              <li>Tarif dégressif</li>
-              <li>Ambiance motivante garantie</li>
+            <div class="offer__foot"><p>Une flexibilité adaptée à ton emploi du temps.</p><a href="#contact" class="btn btn--small">Réserver</a></div>
+          </article>
+          <article class="offer reveal" id="offre-collectif">
+            <header class="offer__head">
+              <span class="offer__num">02</span>
+              <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><circle cx="5" cy="10" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M7 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M2 19c0-2.2 1.3-3.6 3-3.9M22 19c0-2.2-1.3-3.6-3-3.9"/></svg></span>
+              <div>
+                <h3 class="offer__title">Séances collectives &amp; entreprises</h3>
+                <p class="offer__tagline">Se dépenser à plusieurs, pour se surpasser.</p>
+              </div>
+            </header>
+            <ul class="price-list">
+              <li class="price-row">
+                <div class="price-row__label"><strong>Cours collectif en extérieur</strong><small>Une séance organisée et encadrée par un coach, accessible et motivante. Chacun s'inscrit librement.</small></div>
+                <div class="price-row__price">15 €<small>/ personne</small></div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Tarif duo</strong><small>Viens à deux et profite d'un tarif préférentiel.</small></div>
+                <div class="price-row__price">10 €<small>/ personne</small></div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Carte 5 séances collectives</strong></div>
+                <div class="price-row__price">60 €</div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Groupes, entreprises, associations &amp; clubs</strong><small>Sur devis : tarif adapté au nombre de participants et au format choisi.</small></div>
+                <div class="price-row__price"><span class="price-row__from">à partir de</span>80 €</div>
+              </li>
             </ul>
-            <a href="#contact" class="btn btn--ghost btn--block">Je choisis cette formule</a>
+
+            <div class="offer__foot"><p>Une séance pour ton équipe ou ton club ? Demande un devis.</p><a href="#contact" class="btn btn--small">Nous contacter</a></div>
+          </article>
+          <article class="offer reveal" id="offre-distance">
+            <header class="offer__head">
+              <span class="offer__num">03</span>
+              <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><circle cx="12" cy="9" r="2"/><path d="M8.5 14c.6-1.4 2-2.2 3.5-2.2s2.9.8 3.5 2.2"/></svg></span>
+              <div>
+                <h3 class="offer__title">Programmes &amp; coaching à distance</h3>
+                <p class="offer__tagline">Des solutions flexibles, où que tu sois.</p>
+              </div>
+            </header>
+            <ul class="price-list">
+              <li class="price-row">
+                <div class="price-row__label"><strong>Programme personnalisé</strong><small>Un programme de 4 séances adapté à ton objectif, pour t'entraîner en autonomie.</small></div>
+                <div class="price-row__price">90 €</div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Bilan + programme sur-mesure</strong><small>Un bilan complet et un programme conçu spécifiquement pour toi.</small></div>
+                <div class="price-row__price">150 €</div>
+              </li>
+              <li class="price-row">
+                <div class="price-row__label"><strong>Coaching à distance (visio) à l'unité</strong><small>Une séance individuelle avec ton coach, à distance.</small></div>
+                <div class="price-row__price">50 €</div>
+              </li>
+            </ul>
+
+            <div class="offer__foot"><p>Idéal pour t'entraîner où tu veux, quand tu veux.</p><a href="#contact" class="btn btn--small">Je veux mon programme</a></div>
+          </article>
+          <article class="offer reveal" id="offre-essentiel">
+            <header class="offer__head">
+              <span class="offer__num">04</span>
+              <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M8.5 11.5l1.2 1.2 2-2M8.5 16.5l1.2 1.2 2-2M14 12h2M14 17h2"/></svg></span>
+              <div>
+                <h3 class="offer__title">Accompagnement MVPulse</h3>
+                <p class="offer__tagline">L'accompagnement intelligent pour progresser en autonomie, sans être seul·e.</p>
+              </div>
+            </header>
+            <div class="essentiel">
+              <div>
+                <p class="essentiel__name">MVPulse Essentiel</p>
+                <ul class="check-list">
+                  <li>1 séance de coaching visio par semaine</li>
+                  <li>Programme sur-mesure</li>
+                  <li>Suivi individualisé</li>
+                  <li>Bilan mensuel</li>
+                  <li>Conseils nutritionnels adaptés à ton objectif</li>
+                </ul>
+              </div>
+              <div class="essentiel__price">
+                <p class="essentiel__amount">240 €<small>/ mois</small></p>
+                <a href="#contact" class="btn btn--block">Je choisis Essentiel</a>
+              </div>
+            </div>
+
+          </article>
+          <article class="offer reveal" id="offre-premium">
+            <header class="offer__head">
+              <span class="offer__num">05</span>
+              <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20v-5M11 20v-8M16 20v-11"/><path d="M4 11l6-5 4 3 6-5"/><path d="M16 4h4v4"/></svg></span>
+              <div>
+                <h3 class="offer__title">Accompagnements premium</h3>
+                <p class="offer__tagline">Un suivi complet pour des résultats exceptionnels.</p>
+              </div>
+            </header>
+            <div class="tiers">
+              <div class="tier tier--argent">
+                <p class="tier__name">Argent</p>
+                <p class="tier__lead">Coaching présentiel · 1 séance / semaine</p>
+                <ul class="check-list">
+                  <li>Programme sur-mesure</li>
+                  <li>Suivi individualisé</li>
+                  <li>Bilan mensuel</li>
+                  <li>Conseils nutritionnels adaptés à l'objectif</li>
+                  <li class="is-off">Priorité dans les disponibilités</li>
+                </ul>
+                <p class="tier__price">290 €<small>/ mois</small></p>
+                <a href="#contact" class="btn btn--ghost btn--block">Je choisis Argent</a>
+              </div>
+              <div class="tier tier--or">
+                <p class="tier__name">Or</p>
+                <p class="tier__lead">Coaching présentiel · 2 séances / semaine</p>
+                <ul class="check-list">
+                  <li>Programme sur-mesure</li>
+                  <li>Suivi individualisé</li>
+                  <li>Bilan mensuel</li>
+                  <li>Programme alimentaire personnalisé</li>
+                  <li class="is-off">Priorité dans les disponibilités</li>
+                </ul>
+                <p class="tier__price">520 €<small>/ mois</small></p>
+                <a href="#contact" class="btn btn--ghost btn--block">Je choisis Or</a>
+              </div>
+              <div class="tier tier--platine">
+                <p class="tier__name">Platine</p>
+                <p class="tier__lead">Coaching présentiel · fréquence adaptée à l'objectif</p>
+                <ul class="check-list">
+                  <li>Analyse hebdomadaire et retour technique</li>
+                  <li>Suivi individualisé renforcé</li>
+                  <li>Bilan mensuel</li>
+                  <li>Programme alimentaire personnalisé</li>
+                  <li>Priorité dans les disponibilités</li>
+                </ul>
+                <p class="tier__price">750 €<small>/ mois</small></p>
+                <a href="#contact" class="btn btn--ghost btn--block">Je choisis Platine</a>
+              </div>
+            </div>
+
           </article>
         </div>
+
+        <div class="offers-help reveal">
+          <div>
+            <h3>Tu hésites entre deux formules ?</h3>
+            <p>Décris-nous ton objectif et on t'oriente vers le programme le plus adapté.</p>
+          </div>
+          <a href="#contact" class="btn">Décrire mon objectif</a>
+        </div>
+        <p class="offers-legal">Tarifs affichés = prix payés par le client. TVA non applicable, art. 293 B du CGI, sous réserve de bénéfice de la franchise en base de TVA.</p>
       </div>
     </section>
 
@@ -419,11 +560,11 @@
           </details>
           <details class="reveal">
             <summary>Est-ce qu'il y a un engagement ?</summary>
-            <p>La séance découverte est gratuite et sans engagement. Les formules sont ensuite proposées au mois ou en packs de séances.</p>
+            <p>La séance découverte est gratuite et sans engagement. Tu choisis ensuite la formule qui te convient : séance à l'unité, pack de séances, programme ou accompagnement au mois.</p>
           </details>
           <details class="reveal">
             <summary>Comment se passe le suivi en ligne ?</summary>
-            <p>Tu reçois ton programme et tes vidéos d'exercices, tu notes tes séances, et on fait un bilan chaque semaine pour ajuster. Tu peux nous écrire à tout moment si tu as une question.</p>
+            <p>Tu reçois un programme conçu pour ton objectif et tu t'entraînes en autonomie. Selon la formule, tu as aussi des séances en visio avec ton coach (50 € l'unité, ou 1 par semaine avec MVPulse Essentiel) et un bilan mensuel pour ajuster. Tu peux nous écrire à tout moment si tu as une question.</p>
           </details>
         </div>
       </div>
