@@ -34,7 +34,7 @@ Pour changer de formulaire, remplacer l'URL dans `index.html` (section CONTACT).
 - [ ] Formules et tarifs (à reprendre du post Instagram des tarifs)
 - [ ] Vrais témoignages clients (avec leur accord)
 - [ ] Email de contact (`index.html` + `CONTACT_EMAIL` dans `assets/js/main.js`)
-- [x] Ville / zone d'intervention (Var & Alpes-Maritimes en présentiel, visio partout dans le monde)
+- [x] Ville / zone d'intervention (Var & Alpes-Maritimes en présentiel, visio à distance)
 - [ ] Page mentions légales (obligatoire en France)
 
 ## Prochaines étapes
