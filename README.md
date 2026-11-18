@@ -42,3 +42,9 @@ Pour changer de formulaire, remplacer l'URL dans `index.html` (section CONTACT).
 - Déploiement sur Vercel (import du repo GitHub, aucun réglage nécessaire)
 - Nom de domaine (ex. `mvpulse.fr`)
 - Prise de rendez-vous en ligne (Calendly / Cal.com)
+
+## Opération Black Friday
+
+Bandeau avec compte à rebours, section « Black Friday » et prix barrés dans les tarifs.
+Tout s'affiche **automatiquement** entre `BF_START` et `BF_END` (en haut de `assets/js/main.js`) et disparaît seul ensuite.
+Les éléments concernés portent la classe `bf-only` dans `index.html`. Pour une prochaine opération, il suffit de changer les dates et les prix.

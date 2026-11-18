@@ -36,6 +36,14 @@
 </head>
 <body>
 
+  <!-- ===== BANDEAU BLACK FRIDAY =====
+       Affiché automatiquement pendant l'opération (dates dans assets/js/main.js). -->
+  <a href="#black-friday" class="bf-bar bf-only">
+    <span class="bf-bar__tag">Black Friday</span>
+    <span class="bf-bar__text">Jusqu'à <strong>-34 %</strong> sur ton coaching</span>
+    <span class="bf-bar__timer">Fin dans <strong data-bf-countdown="short">—</strong></span>
+  </a>
+
   <!-- ===== HEADER ===== -->
   <header class="header" id="top">
     <div class="container header__inner">
@@ -108,6 +116,95 @@
         <span>Mobilité</span><span>•</span><span>Nutrition</span><span>•</span>
       </div>
     </div>
+
+    <!-- ===== BLACK FRIDAY =====
+         Section visible uniquement pendant l'opération (dates dans assets/js/main.js).
+         Les prix barrés = tarifs habituels de la plaquette. -->
+    <section class="section bf bf-only" id="black-friday">
+      <div class="container">
+        <div class="bf__head">
+          <div>
+            <p class="eyebrow">Black Friday · jusqu'au lundi 30 novembre</p>
+            <h2 class="section__title">Jusqu'à <span class="accent">-34 %</span> pour lancer ta transformation.</h2>
+            <p class="section__sub">Le meilleur moment pour démarrer, c'est maintenant. Packs, programmes et accompagnements : nos plus belles réductions de l'année, pendant quelques jours seulement.</p>
+          </div>
+          <div class="bf-timer" aria-label="Temps restant avant la fin de l'offre">
+            <p class="bf-timer__label">L'offre se termine dans</p>
+            <div class="bf-timer__grid" data-bf-countdown="full">
+              <div><strong data-unit="d">00</strong><span>jours</span></div>
+              <div><strong data-unit="h">00</strong><span>heures</span></div>
+              <div><strong data-unit="m">00</strong><span>min</span></div>
+              <div><strong data-unit="s">00</strong><span>sec</span></div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="bf-deals">
+          <li class="bf-deal bf-deal--hot">
+            <span class="bf-deal__badge">-34 %</span>
+            <p class="bf-deal__kicker">Programmes &amp; à distance</p>
+            <h3 class="bf-deal__title">Bilan + programme sur-mesure</h3>
+            <p class="bf-deal__price"><s>150 €</s> 99 €</p>
+            <p class="bf-deal__desc">Un bilan complet et un programme conçu pour toi. L'offre la plus forte de l'opération.</p>
+            <a href="#offre-distance" class="bf-deal__link">Voir l'offre →</a>
+          </li>
+          <li class="bf-deal">
+            <span class="bf-deal__badge">-20 %</span>
+            <p class="bf-deal__kicker">À domicile</p>
+            <h3 class="bf-deal__title">Pack 12 séances</h3>
+            <p class="bf-deal__price"><s>660 €</s> 528 €</p>
+            <p class="bf-deal__desc">Soit 44 € la séance chez toi. Aussi : pack 8 à 408 € (-15 %) et pack 4 à 234 € (-10 %).</p>
+            <a href="#offre-domicile" class="bf-deal__link">Voir l'offre →</a>
+          </li>
+          <li class="bf-deal">
+            <span class="bf-deal__badge">-25 %</span>
+            <p class="bf-deal__kicker">MVPulse Essentiel</p>
+            <h3 class="bf-deal__title">Ton 1er mois</h3>
+            <p class="bf-deal__price"><s>240 €</s> 180 €</p>
+            <p class="bf-deal__desc">Visio chaque semaine, programme sur-mesure, suivi et conseils nutrition.</p>
+            <a href="#offre-essentiel" class="bf-deal__link">Voir l'offre →</a>
+          </li>
+          <li class="bf-deal">
+            <span class="bf-deal__badge">-20 %</span>
+            <p class="bf-deal__kicker">Premium Argent, Or &amp; Platine</p>
+            <h3 class="bf-deal__title">Ton 1er mois</h3>
+            <p class="bf-deal__price"><small>dès</small> <s>290 €</s> 232 €</p>
+            <p class="bf-deal__desc">Or à 416 € et Platine à 600 € le premier mois, au lieu de 520 € et 750 €.</p>
+            <a href="#offre-premium" class="bf-deal__link">Voir l'offre →</a>
+          </li>
+          <li class="bf-deal">
+            <span class="bf-deal__badge">-25 %</span>
+            <p class="bf-deal__kicker">En groupe</p>
+            <h3 class="bf-deal__title">Carte 5 séances collectives</h3>
+            <p class="bf-deal__price"><s>60 €</s> 45 €</p>
+            <p class="bf-deal__desc">9 € la séance en extérieur, encadrée par un coach. À partager avec ta motivation.</p>
+            <a href="#offre-collectif" class="bf-deal__link">Voir l'offre →</a>
+          </li>
+          <li class="bf-deal">
+            <span class="bf-deal__badge">-23 %</span>
+            <p class="bf-deal__kicker">Programmes &amp; à distance</p>
+            <h3 class="bf-deal__title">Programme personnalisé</h3>
+            <p class="bf-deal__price"><s>90 €</s> 69 €</p>
+            <p class="bf-deal__desc">4 séances adaptées à ton objectif, pour t'entraîner en autonomie.</p>
+            <a href="#offre-distance" class="bf-deal__link">Voir l'offre →</a>
+          </li>
+        </ul>
+
+        <div class="bf-how">
+          <div class="bf-how__code">
+            <p>Ton code</p>
+            <strong>BLACKFRIDAY</strong>
+          </div>
+          <div class="bf-how__text">
+            <h3>Comment en profiter ?</h3>
+            <p>Remplis le questionnaire et indique le code <strong>BLACKFRIDAY</strong> avec la formule qui t'intéresse. On te recontacte sous 24h pour tout caler.</p>
+            <p class="bf-how__gift">🎁 Idée cadeau : toutes les offres peuvent être offertes pour Noël.</p>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSceHnG6FeyifEcFsNC_xNY66pXaZ85nYVSvVqrzuPcyajZGdg/viewform" target="_blank" rel="noopener" class="btn">J'en profite ↗</a>
+        </div>
+        <p class="offers-legal">Offres valables du 18 au 30 novembre 2026 inclus, pour toute réservation effectuée pendant cette période. Prix barrés = tarifs pratiqués habituellement. Réductions « 1er mois » appliquées au premier mois d'accompagnement. Offres non cumulables entre elles ni avec d'autres réductions.</p>
+      </div>
+    </section>
 
     <!-- ===== MÉTHODE ===== -->
     <section class="section" id="methode">
@@ -287,6 +384,7 @@
         <div class="offers">
           <article class="offer reveal" id="offre-domicile">
             <header class="offer__head">
+              <span class="bf-ribbon bf-only">Black Friday</span>
               <span class="offer__num">01</span>
               <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
               <div>
@@ -301,15 +399,15 @@
               </li>
               <li class="price-row">
                 <div class="price-row__label"><strong>Pack 4 séances</strong><small>Soit 65 € la séance · <em>60 € économisés</em></small></div>
-                <div class="price-row__price">260 €</div>
+                <div class="price-row__price"><span class="bf-was">260 €</span><span class="bf-now bf-only">234 €<i>-10 %</i></span></div>
               </li>
               <li class="price-row">
                 <div class="price-row__label"><strong>Pack 8 séances</strong><small>Soit 60 € la séance · <em>160 € économisés</em></small></div>
-                <div class="price-row__price">480 €</div>
+                <div class="price-row__price"><span class="bf-was">480 €</span><span class="bf-now bf-only">408 €<i>-15 %</i></span></div>
               </li>
               <li class="price-row">
                 <div class="price-row__label"><strong>Pack 12 séances</strong><small>Soit 55 € la séance · <em>300 € économisés</em></small></div>
-                <div class="price-row__price">660 €</div>
+                <div class="price-row__price"><span class="bf-was">660 €</span><span class="bf-now bf-only">528 €<i>-20 %</i></span></div>
               </li>
             </ul>
 
@@ -317,6 +415,7 @@
           </article>
           <article class="offer reveal" id="offre-collectif">
             <header class="offer__head">
+              <span class="bf-ribbon bf-only">Black Friday</span>
               <span class="offer__num">02</span>
               <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><circle cx="5" cy="10" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M7 20c0-3 2.2-5 5-5s5 2 5 5"/><path d="M2 19c0-2.2 1.3-3.6 3-3.9M22 19c0-2.2-1.3-3.6-3-3.9"/></svg></span>
               <div>
@@ -335,7 +434,7 @@
               </li>
               <li class="price-row">
                 <div class="price-row__label"><strong>Carte 5 séances collectives</strong></div>
-                <div class="price-row__price">60 €</div>
+                <div class="price-row__price"><span class="bf-was">60 €</span><span class="bf-now bf-only">45 €<i>-25 %</i></span></div>
               </li>
               <li class="price-row">
                 <div class="price-row__label"><strong>Groupes, entreprises, associations &amp; clubs</strong><small>Sur devis : tarif adapté au nombre de participants et au format choisi.</small></div>
@@ -347,6 +446,7 @@
           </article>
           <article class="offer reveal" id="offre-distance">
             <header class="offer__head">
+              <span class="bf-ribbon bf-only">Black Friday</span>
               <span class="offer__num">03</span>
               <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><circle cx="12" cy="9" r="2"/><path d="M8.5 14c.6-1.4 2-2.2 3.5-2.2s2.9.8 3.5 2.2"/></svg></span>
               <div>
@@ -357,11 +457,11 @@
             <ul class="price-list">
               <li class="price-row">
                 <div class="price-row__label"><strong>Programme personnalisé</strong><small>Un programme de 4 séances adapté à ton objectif, pour t'entraîner en autonomie.</small></div>
-                <div class="price-row__price">90 €</div>
+                <div class="price-row__price"><span class="bf-was">90 €</span><span class="bf-now bf-only">69 €<i>-23 %</i></span></div>
               </li>
               <li class="price-row">
                 <div class="price-row__label"><strong>Bilan + programme sur-mesure</strong><small>Un bilan complet et un programme conçu spécifiquement pour toi.</small></div>
-                <div class="price-row__price">150 €</div>
+                <div class="price-row__price"><span class="bf-was">150 €</span><span class="bf-now bf-only">99 €<i>-34 %</i></span></div>
               </li>
               <li class="price-row">
                 <div class="price-row__label"><strong>Coaching à distance (visio) à l'unité</strong><small>Une séance individuelle avec ton coach, à distance.</small></div>
@@ -373,6 +473,7 @@
           </article>
           <article class="offer reveal" id="offre-essentiel">
             <header class="offer__head">
+              <span class="bf-ribbon bf-only">Black Friday</span>
               <span class="offer__num">04</span>
               <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M8.5 11.5l1.2 1.2 2-2M8.5 16.5l1.2 1.2 2-2M14 12h2M14 17h2"/></svg></span>
               <div>
@@ -392,7 +493,8 @@
                 </ul>
               </div>
               <div class="essentiel__price">
-                <p class="essentiel__amount">240 €<small>/ mois</small></p>
+                <p class="bf-note bf-only">Black Friday : -25 % sur ton 1er mois</p>
+                <p class="essentiel__amount"><span class="bf-was">240 €</span><span class="bf-now bf-only">180 €</span><small>/ mois</small></p>
                 <a href="#contact" class="btn btn--block">Je choisis Essentiel</a>
               </div>
             </div>
@@ -400,6 +502,7 @@
           </article>
           <article class="offer reveal" id="offre-premium">
             <header class="offer__head">
+              <span class="bf-ribbon bf-only">Black Friday</span>
               <span class="offer__num">05</span>
               <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M6 20v-5M11 20v-8M16 20v-11"/><path d="M4 11l6-5 4 3 6-5"/><path d="M16 4h4v4"/></svg></span>
               <div>
@@ -418,7 +521,8 @@
                   <li>Conseils nutritionnels adaptés à l'objectif</li>
                   <li class="is-off">Priorité dans les disponibilités</li>
                 </ul>
-                <p class="tier__price">290 €<small>/ mois</small></p>
+                <p class="bf-note bf-only">Black Friday : -20 % sur le 1er mois</p>
+                <p class="tier__price"><span class="bf-was">290 €</span><span class="bf-now bf-only">232 €</span><small>/ mois</small></p>
                 <a href="#contact" class="btn btn--ghost btn--block">Je choisis Argent</a>
               </div>
               <div class="tier tier--or">
@@ -431,7 +535,8 @@
                   <li>Programme alimentaire personnalisé</li>
                   <li class="is-off">Priorité dans les disponibilités</li>
                 </ul>
-                <p class="tier__price">520 €<small>/ mois</small></p>
+                <p class="bf-note bf-only">Black Friday : -20 % sur le 1er mois</p>
+                <p class="tier__price"><span class="bf-was">520 €</span><span class="bf-now bf-only">416 €</span><small>/ mois</small></p>
                 <a href="#contact" class="btn btn--ghost btn--block">Je choisis Or</a>
               </div>
               <div class="tier tier--platine">
@@ -444,7 +549,8 @@
                   <li>Programme alimentaire personnalisé</li>
                   <li>Priorité dans les disponibilités</li>
                 </ul>
-                <p class="tier__price">750 €<small>/ mois</small></p>
+                <p class="bf-note bf-only">Black Friday : -20 % sur le 1er mois</p>
+                <p class="tier__price"><span class="bf-was">750 €</span><span class="bf-now bf-only">600 €</span><small>/ mois</small></p>
                 <a href="#contact" class="btn btn--ghost btn--block">Je choisis Platine</a>
               </div>
             </div>

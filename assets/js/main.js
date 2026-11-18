@@ -2,6 +2,45 @@
 
 document.documentElement.classList.remove("no-js");
 
+// ----- Black Friday -----
+// L'opération s'affiche (bandeau, section, prix barrés) uniquement entre ces deux dates,
+// puis disparaît toute seule. Pour la prolonger ou la refaire, change simplement les dates.
+const BF_START = new Date("2026-11-18T00:00:00+01:00");
+const BF_END = new Date("2026-11-30T23:59:59+01:00");
+const isBlackFriday = () => {
+  const now = Date.now();
+  return now >= BF_START.getTime() && now <= BF_END.getTime();
+};
+
+if (isBlackFriday()) {
+  document.documentElement.classList.add("is-bf");
+  const pad = (n) => String(n).padStart(2, "0");
+  const shortEls = document.querySelectorAll('[data-bf-countdown="short"]');
+  const fullEls = document.querySelectorAll('[data-bf-countdown="full"]');
+  const tickBf = () => {
+    const left = Math.max(0, BF_END.getTime() - Date.now());
+    if (left === 0) {
+      document.documentElement.classList.remove("is-bf");
+      clearInterval(bfTimer);
+      return;
+    }
+    const s = Math.floor(left / 1000);
+    const d = Math.floor(s / 86400);
+    const h = Math.floor((s % 86400) / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    const sec = s % 60;
+    shortEls.forEach((el) => (el.textContent = d > 0 ? `${d}j ${pad(h)}h ${pad(m)}min` : `${pad(h)}h ${pad(m)}min ${pad(sec)}s`));
+    fullEls.forEach((el) => {
+      el.querySelector('[data-unit="d"]').textContent = pad(d);
+      el.querySelector('[data-unit="h"]').textContent = pad(h);
+      el.querySelector('[data-unit="m"]').textContent = pad(m);
+      el.querySelector('[data-unit="s"]').textContent = pad(sec);
+    });
+  };
+  const bfTimer = setInterval(tickBf, 1000);
+  tickBf();
+}
+
 // ----- Menu mobile -----
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
