@@ -970,6 +970,7 @@ p { margin: 0 0 1rem; }
 .contact-list { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 16px; }
 .contact-list li { display: flex; align-items: center; gap: 14px; }
 .contact-list a:hover { color: var(--accent); }
+.contact-list__note { display: block; color: var(--muted); font-size: 0.82rem; }
 
 .split--contact .split__content { position: sticky; top: calc(var(--header-h) + var(--bar-h) + 32px); }
 .signup {
@@ -1381,4 +1382,35 @@ html.is-bf { --bar-h: 42px; }
   .bf-timer__grid strong { font-size: 1.8rem; }
   .bf-how { grid-template-columns: 1fr; padding: 24px 20px; gap: 20px; text-align: center; }
   .bf-how__code { justify-self: center; }
+}
+
+/* ----- Zones d'intervention (présentiel + visio monde) ----- */
+.zones { list-style: none; padding: 0; margin: 28px 0 36px; display: flex; flex-wrap: wrap; gap: 10px; }
+.zones li {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 8px 16px 8px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(224, 184, 90, 0.35);
+  font-size: 0.88rem; color: var(--muted);
+}
+.zones strong { color: var(--text); font-weight: 700; }
+.zones svg, .world__icon svg {
+  width: 20px; height: 20px; flex: none;
+  fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.world {
+  display: flex; align-items: center; gap: 18px;
+  margin-top: 24px; padding: 20px 22px;
+  border-radius: 16px;
+  background: radial-gradient(80% 140% at 100% 0%, rgba(224, 184, 90, 0.16), transparent 60%), var(--bg-alt);
+  border: 1px solid rgba(224, 184, 90, 0.35);
+}
+.world__icon { flex: none; width: 52px; height: 52px; border-radius: 50%; background: var(--accent-soft); display: grid; place-items: center; }
+.world__icon svg { width: 28px; height: 28px; }
+.world strong { display: block; font-family: var(--font-display); font-weight: 800; text-transform: uppercase; margin-bottom: 4px; }
+.world p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+@media (max-width: 640px) {
+  .zones li { width: 100%; }
+  .world { align-items: flex-start; padding: 18px 16px; }
 }
