@@ -29,7 +29,7 @@ Pour changer de formulaire, remplacer l'URL dans `index.html` (section CONTACT).
 ## À personnaliser
 
 - [x] Photos et prénoms des coachs (Morgan, Valentin)
-- [ ] Bio et spécialités de chaque coach (section « L'équipe »)
+- [x] Bio et spécialités de chaque coach (section « L'équipe »)
 - [ ] Chiffres clés du hero (`data-count`)
 - [ ] Formules et tarifs (à reprendre du post Instagram des tarifs)
 - [ ] Vrais témoignages clients (avec leur accord)
