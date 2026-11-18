@@ -39,6 +39,28 @@ if (isBlackFriday()) {
   };
   const bfTimer = setInterval(tickBf, 1000);
   tickBf();
+
+  // Fenêtre d'accueil : une seule fois par visite, après quelques secondes
+  const pop = document.getElementById("bf-pop");
+  if (pop) {
+    let seen = false;
+    try { seen = sessionStorage.getItem("bf-pop-seen") === "1"; } catch (e) {}
+    const closePop = () => {
+      pop.classList.remove("is-open");
+      setTimeout(() => (pop.hidden = true), 250);
+      try { sessionStorage.setItem("bf-pop-seen", "1"); } catch (e) {}
+    };
+    if (!seen) {
+      setTimeout(() => {
+        pop.hidden = false;
+        requestAnimationFrame(() => pop.classList.add("is-open"));
+      }, 2500);
+    }
+    pop.addEventListener("click", (e) => {
+      if (e.target === pop || e.target.closest(".bf-pop__close") || e.target.closest(".bf-pop__cta")) closePop();
+    });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !pop.hidden) closePop(); });
+  }
 }
 
 // ----- Menu mobile -----

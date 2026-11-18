@@ -78,6 +78,7 @@
       </div>
       <div class="container hero__inner">
         <div class="hero__content">
+          <a href="#black-friday" class="bf-pill bf-only"><span class="bf-pill__dot"></span><strong>Black Friday</strong> <span>Jusqu'à -34 %</span><span class="bf-pill__timer">· fin dans <b data-bf-countdown="short">—</b></span> →</a>
           <p class="eyebrow reveal">Programmes 100 % personnalisés · Présentiel & en ligne</p>
           <h1 class="hero__title reveal">
             Trouve ton <span class="accent">rythme</span>.<br>
@@ -106,6 +107,7 @@
         </div>
         <div class="hero__visual reveal" aria-hidden="true">
           <img src="assets/img/logo-icon.png" alt="" width="560" height="386">
+          <a href="#black-friday" class="bf-sticker bf-only" tabindex="-1"><span>Black<br>Friday</span><strong>-34%</strong><em>jusqu'au 30/11</em></a>
         </div>
       </div>
     </section>
@@ -126,10 +128,17 @@
          Section visible uniquement pendant l'opération (dates dans assets/js/main.js).
          Les prix barrés = tarifs habituels de la plaquette. -->
     <section class="section bf bf-only" id="black-friday">
+      <div class="bf-ticker" aria-hidden="true">
+        <div class="bf-ticker__track">
+          <span>Black Friday</span><i>-34 %</i><span>Black Friday</span><i>Offres limitées</i><span>Black Friday</span><i>-34 %</i><span>Black Friday</span><i>Jusqu'au 30/11</i>
+          <span>Black Friday</span><i>-34 %</i><span>Black Friday</span><i>Offres limitées</i><span>Black Friday</span><i>-34 %</i><span>Black Friday</span><i>Jusqu'au 30/11</i>
+        </div>
+      </div>
       <div class="container">
+        <p class="bf-mega" aria-hidden="true">Black <span>Friday</span></p>
         <div class="bf__head">
           <div>
-            <p class="eyebrow">Black Friday · jusqu'au lundi 30 novembre</p>
+            <p class="eyebrow bf-eyebrow"><span class="bf-pill__dot"></span> En ce moment · jusqu'au lundi 30 novembre</p>
             <h2 class="section__title">Jusqu'à <span class="accent">-34 %</span> pour lancer ta transformation.</h2>
             <p class="section__sub">Le meilleur moment pour démarrer, c'est maintenant. Packs, programmes et accompagnements : nos plus belles réductions de l'année, pendant quelques jours seulement.</p>
           </div>
@@ -147,6 +156,7 @@
         <ul class="bf-deals">
           <li class="bf-deal bf-deal--hot">
             <span class="bf-deal__badge">-34 %</span>
+            <span class="bf-deal__star">🔥 Offre star</span>
             <p class="bf-deal__kicker">Programmes &amp; à distance</p>
             <h3 class="bf-deal__title">Bilan + programme sur-mesure</h3>
             <p class="bf-deal__price"><s>150 €</s> 99 €</p>
@@ -746,5 +756,17 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
+  <!-- Fenêtre Black Friday : s'ouvre une fois par visite, pendant l'opération -->
+  <div class="bf-pop" id="bf-pop" role="dialog" aria-modal="true" aria-labelledby="bf-pop-title" hidden>
+    <div class="bf-pop__box">
+      <button type="button" class="bf-pop__close" aria-label="Fermer">×</button>
+      <p class="bf-pop__kicker">Black Friday</p>
+      <p class="bf-pop__big" id="bf-pop-title">-34<span>%</span></p>
+      <p class="bf-pop__text">Jusqu'à <strong>-34 %</strong> sur ton coaching : packs, programmes sur-mesure et accompagnements.</p>
+      <p class="bf-pop__timer">Fin dans <strong data-bf-countdown="short">—</strong></p>
+      <a href="#black-friday" class="bf-pop__cta">Voir les offres</a>
+      <p class="bf-pop__code">Code <strong>BLACKFRIDAY</strong> · jusqu'au 30 novembre</p>
+    </div>
+  </div>
 </body>
 </html>
