@@ -1814,3 +1814,34 @@ html.is-bf { --bar-h: 46px; }
 .bf-deal__title { padding-right: 58px; }
 .offers-nav__item { position: relative; }
 .bf-navtag { position: absolute; top: 10px; right: 10px; padding: 2px 8px; border-radius: 999px; background: var(--bf-red); color: #fff; font-size: 0.7rem; font-weight: 800; white-space: nowrap; }
+
+/* ----- Message direct Instagram ----- */
+.signup__dm { margin-bottom: 4px; gap: 10px; }
+.signup__dm svg { width: 20px; height: 20px; fill: none; stroke: var(--on-accent); stroke-width: 2; }
+.signup__or { display: flex; align-items: center; gap: 12px; margin: 18px 0; color: var(--muted); font-size: 0.85rem; }
+.signup__or::before, .signup__or::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+.dm-float {
+  position: fixed;
+  right: 20px; bottom: 20px;
+  z-index: 150;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px 12px 14px;
+  border-radius: 999px;
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7);
+  color: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 14px 34px -10px rgba(238, 42, 123, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.dm-float:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -10px rgba(238, 42, 123, 0.9); }
+.dm-float svg { width: 24px; height: 24px; flex: none; fill: none; stroke: #fff; stroke-width: 2; }
+.dm-float svg .fill { fill: #fff; stroke: none; }
+.dm-float strong { font-weight: 800; }
+@media (max-width: 640px) {
+  .dm-float { right: 14px; bottom: 14px; padding: 14px; }
+  .dm-float__label { display: none; }
+}
+.bf-pill__short { display: none; }
+@media (max-width: 640px) { .bf-pill__long { display: none; } .bf-pill__short { display: inline; } }
