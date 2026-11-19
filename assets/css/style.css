@@ -1807,3 +1807,10 @@ html.is-bf { --bar-h: 46px; }
   .bf-bar, .bf-bar__text strong, .bf-pill, .bf-pill__dot, .bf-ticker__track, .bf .section__title .accent,
   .bf-deal--hot, .bf-deal--hot .bf-deal__badge, .bf-how .btn, .bf-pop__cta, .bf-pop__big, .bf-sticker { animation: none; }
 }
+
+/* Black Friday : -30 % / -50 % */
+.bf-sticker small { font-size: 0.62rem; letter-spacing: 0.12em; opacity: 0.9; }
+.bf-pop__upto { margin: 4px 0 -6px; font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: #d8d8d8; }
+.bf-deal__title { padding-right: 58px; }
+.offers-nav__item { position: relative; }
+.bf-navtag { position: absolute; top: 10px; right: 10px; padding: 2px 8px; border-radius: 999px; background: var(--bf-red); color: #fff; font-size: 0.7rem; font-weight: 800; white-space: nowrap; }
