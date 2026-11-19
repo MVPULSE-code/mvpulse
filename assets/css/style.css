@@ -1846,3 +1846,5 @@ html.is-bf { --bar-h: 46px; }
 .bf-pill__short { display: none; }
 @media (max-width: 640px) { .bf-pill__long { display: none; } .bf-pill__short { display: inline; } }
 .eyebrow__keep { display: inline-block; }
+.bf-how__alt { font-size: 0.9rem; }
+.bf-how__alt a { color: var(--bf-red-light); text-decoration: underline; }
